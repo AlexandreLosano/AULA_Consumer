@@ -29,6 +29,10 @@ public class Produto {
 		this.price = price;
 	}
 
+	public static void estaticoAtaulizacaoPreco (Produto p) {
+		p.setPrice(p.getPrice()*1.1);
+	}
+	
 	@Override
 	public String toString() {
 		return "Product [name=" + name + ", price=" + price + "]";
