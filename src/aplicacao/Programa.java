@@ -17,7 +17,7 @@ public class Programa {
 		list.add(new Produto("Tablet", 350.50));
 		list.add(new Produto("HD Case", 80.90));
 
-		list.forEach(Produto::estaticoAtaulizacaoPreco);
+		list.forEach(Produto::naoEstaticoAtaulizacaoPreco);
 		
 		list.forEach(System.out::println);
 	}
